@@ -1,0 +1,239 @@
+.circle-1 {
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+    top: 25rem;
+    left: -4rem;
+    border-radius: 50%;
+    z-index: -9;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,197,131,1)), color-stop(100%,rgba(255,169,149,1)));
+    transition: all 2s;
+}
+
+.animation-circle-1 {
+    width: 12rem;
+    height: 12rem;
+    top: 78rem;
+    left: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(131, 199, 254)), color-stop(100%, rgb(229, 149, 255)));
+}
+.animation-2-circle-1 {
+    width: 25rem;
+    height: 25rem;
+    top: 120rem;
+    left: -4rem;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(172, 131, 254, 0.78)), color-stop(100%, rgba(122, 115, 254, 0.78)));
+}
+.animation-3-circle-1 {
+    width: 23rem;
+    height: 23rem;
+    top: 170rem;
+    left: -10rem;
+    background: rgb(131, 199, 254);
+
+}
+
+.animation-4-circle-1 {
+    width: 25rem;
+    height: 25rem;
+    left: -4rem;
+    top: 220rem;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,197,131,1)), color-stop(100%, rgb(238, 141, 117)));
+}
+
+@keyframes circle-1-1 {
+    from {
+    }
+
+    to {
+        width: 15rem;
+        height: 15rem;
+        top: 80rem;
+        left: 4rem;
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(131, 199, 254)), color-stop(100%, rgb(229, 149, 255)));
+    }
+
+}
+
+.circle-2 {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.5rem solid rgba(248,148,160,1);
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    top: 4rem;
+    left: 50%;
+    /*    animation-name: circle-2-translate;
+        animation-duration: 6s;*/
+    z-index: 100;
+    transition: opacity 2s;
+    opacity: 1;
+
+}
+
+.animation-circle-2 {
+    opacity: 0;
+}
+.animation-2-circle-2 {
+    opacity: 1;
+    border: 0.5rem solid rgba(253, 253, 253, 0.91);
+    top: 5rem;
+    left: 40%;
+
+}
+.animation-3-circle-2 {
+    opacity: 0;
+    top: 3rem;
+    left: 60%;
+
+
+}
+.animation-4-circle-2 {
+    width: 5rem;
+    height: 5rem;
+    opacity: 1;
+    top: 2rem;
+    left: 50%;
+    border: 0.5rem solid rgba(255,169,149);
+
+
+}
+
+@keyframes circle-2-translate {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.circle-3 {
+    width: 646px;
+    height: 646px;
+    background: -webkit-linear-gradient(top, rgba(254,197,131,1) 0%,rgba(255,169,149,1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -10;
+    right: 10rem;
+    top: 15rem;
+    transition: all 2s;
+    /*    animation-name: circle-3-translate;
+        animation-duration: 6s;
+        animation-fill-mode: forwards;*/
+}
+
+.animation-circle-3 {
+    background: linear-gradient(to bottom, rgba(162,237,254,1) 0%,rgba(130,196,254,1) 100%);
+    opacity: 1;
+    right: 25rem;
+    top: 20rem;
+}
+
+.animation-2-circle-3 {
+    width: 710px;
+    height: 710px;
+    right: 20rem;
+    top: 90rem;
+
+}
+.animation-3-circle-3 {
+    width: 5rem;
+    height: 5rem;
+    left: 35rem;
+    top: 142rem;
+
+}
+.animation-4-circle-3 {
+    width: 40rem;
+    height: 40rem;
+    left: 52rem;
+    top: 205rem;
+
+}
+@keyframes circle-3-translate {
+    from {
+        background: -webkit-linear-gradient(top, rgba(254,197,131,1) 0%,rgba(255,169,149,1) 100%);
+        opacity: 1;
+        right: 1rem;
+        top: 10rem;
+    }
+    50% {
+        background: -webkit-linear-gradient(top, rgba(254,197,131,1) 0%, rgb(121, 253, 233) 100%);
+        opacity: 0.3;
+        right: 9rem;
+        top: 15rem;
+    }
+    to {
+        background: linear-gradient(to bottom, rgba(162,237,254,1) 0%,rgba(130,196,254,1) 100%);
+        opacity: 1;
+        right: 15rem;
+        top: 20rem;
+    }
+}
+
+.circle-4 {
+    width: 8rem;
+    height: 8rem;
+    background: rgb(210,94,235);
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+    right: 16rem;
+    top: 34rem;
+    transition: all 2s;
+    /*    animation-name: circle-4-translate;
+        animation-duration: 6s;*/
+}
+
+.animation-circle-4 {
+    width: 8rem;
+    height: 8rem;
+    right: 33rem;
+    top: 55rem;
+    box-shadow: 0px 15px 27px 0px rgb(219 29 186 / 22%);
+
+}
+.animation-2-circle-4 {
+    width: 6rem;
+    height: 6rem;
+    left: 17rem;
+    top: 132rem;
+
+}
+.animation-3-circle-4 {
+
+    width: 60rem;
+    height: 60rem;
+    left: 40rem;
+    top: 130rem;
+    z-index: -30;
+}
+.animation-4-circle-4 {
+    top: 110rem;
+    width: 20rem;
+    height: 20rem;
+
+    opacity: 0;
+}
+@keyframes circle-4-translate {
+    from {
+        width: 8rem;
+        height: 8rem;
+        right: 5rem;
+        top: 30rem;
+    }
+    50% {
+        width: 9rem;
+        height: 9rem;
+        right: 15rem;
+        top: 45rem;
+    }
+    to {
+        width: 10rem;
+        height: 10rem;
+        right: 40rem;
+        top: 55rem;
+    }
+}

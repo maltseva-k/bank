@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    width: 100%;
+    font-size: 62.5%;
+
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+main {
+    position: relative;
+}
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+.logo h1 {
+    font-size: 1.8rem;
+    color: #c71e1e;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2px;
+
+}
+.logo img {
+    width: 6rem;
+    object-fit: cover;
+
+
+}
+.title__wrap {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+
+}
+.title__left {
+    font-weight: 300;
+    font-size: 3.5rem;
+    padding-left: 5rem;
+    padding-top: 6rem;
+
+}
+.title p {
+    font-weight: 300;
+    font-size: 0.5rem;
+
+}
+.title__equation {
+    padding-left: 3.5rem;
+    font-size: 2.8rem;
+
+}
+.title__equation span{
+
+}
+.title__y {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 5rem;
+}
+.heart {
+
+    width: 5rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    -webkit-mask-image: url("../img/heart.svg");
+
+    background-color: #c71e1e;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: pulse;
+}
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.title__about {
+    width: 35rem;
+    text-align: start;
+    padding-left: 8rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.title__about h1 {
+    font-weight: 300;
+    width: 90%;
+    font-size: 2.8rem;
+    margin:0;
+    line-height: 110%;
+    margin-left: -70px;
+}
+.title__about span {
+    font-weight: 450;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.title__about p {
+    font-size: 1rem;
+    margin:0;
+    line-height: 150%;
+    width: 90%;
+    padding-left: 10px;
+}
+
+.title__right {
+    width: 60%;
+    height: 33rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: relative;
+    overflow-x: hidden;
+}
+.phone{
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.active {
+    width: 15rem;
+    height: 15rem;
+    top: 115rem;
+    left: 5rem;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgb(131, 199, 254)), color-stop(100%, rgb(229, 149, 255)));
+}
+
+
+.shop__wrap {
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    top:5rem;
+    right: 16rem;
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    overflow-x: hidden;
+    z-index: -5;
+
+}
+
+.shop-in-wrap {
+    width: 5rem;
+    height: 5rem;
+    animation-name: replace-shop-in-wrap;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.shop {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    top: 50%;
+    right: -2.5rem;
+    z-index: -1;
+/*    animation-name: replace-shop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;*/
+}
+
+@keyframes replace-shop {
+    from {
+        transform: translate(0, 0);
+
+    }
+
+    to {
+    transform: translate(-50rem, 0);
+    }
+}
+
+@keyframes replace-shop-in-wrap {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(-100%, 0);
+    }
+}
+
+
+.button {
+    width: 3rem;
+    height: 4rem;
+
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    animation-name: button-jump;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    position: fixed;
+    z-index: 100;
+    bottom: 1rem;
+    left: 50%;
+    right: 50%;
+
+}
+.button svg {
+    transform: rotate(90deg);
+    height: 4rem;
+    width: auto;
+    fill: black;
+}
+.button:hover svg {
+    fill: gray;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes button-jump {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(0.5rem);
+    }
+
+}
+
+.shopping {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    background-color: white;
+    transition-property: background-color;
+    transition-duration: 5s;
+}
+
+.shopping:hover {
+    background-color: blueviolet;
+}
+.phone__fon {
+    background-color: white;
+    border-radius: 10px;
+    width: 14rem;
+    height: 30rem;
+    position: absolute;
+    top: 1.8rem;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+.phone__fon__card {
+    width: 80%;
+
+}
+.phone__fon__gpay {
+    width: 60%;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 750px;
+    position: relative;
+}
+.swiper-pagination span{
+    width: 12px;
+    height: 12px;
+
+
+}
+.swiper-pagination-bullet-active {
+    transform: scale(1.6);
+    background-color: black!important;
+
+}
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-bottom: 15px!important;
+}
+
