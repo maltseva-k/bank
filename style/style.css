@@ -157,7 +157,7 @@ main {
     border-radius: 50%;
     background-color: transparent;
     position: absolute;
-    top:5rem;
+    top:7rem;
     right: 16rem;
     width: 25rem;
     height: 25rem;
@@ -184,19 +184,19 @@ main {
     top: 50%;
     right: -2.5rem;
     z-index: -1;
-/*    animation-name: replace-shop;
-    animation-duration: 10s;
+/*    animation-name: replace-shop-in-wrap ;
+    animation-duration: 5s;
     animation-iteration-count: infinite;*/
 }
 
 @keyframes replace-shop {
     from {
-        transform: translate(0, 0);
+        transform: translate(20rem, 0);
 
     }
 
     to {
-    transform: translate(-50rem, 0);
+    transform: translate(7rem, 0);
     }
 }
 
@@ -261,11 +261,58 @@ main {
     background-color: white;
     transition-property: background-color;
     transition-duration: 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.shopping:hover {
-    background-color: blueviolet;
+.shopping img {
+    width: 100%;
+    height: 100%;
 }
+
+.shopping p {
+    position: absolute;
+    align-items: center;
+    align-self: end;
+    bottom: 3rem;
+    font-weight: 450;
+    font-size: 1.1rem;
+
+}
+.p_big {
+    font-size: 1.5rem!important;
+}
+
+.p_link {
+    font-size: 4rem!important;
+    font-weight: 500;
+    padding-bottom: 8px;
+
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.link img {
+    width: 5rem;
+}
+.linkCard {
+    color: #000;
+    text-decoration: none;
+    border-bottom: solid 1px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: border-bottom 500ms ease;
+}
+
+
+.linkCard:hover {
+   border-bottom: none;
+}
+
 .phone__fon {
     background-color: white;
     border-radius: 10px;
@@ -307,5 +354,39 @@ main {
 }
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
     margin-bottom: 15px!important;
+}
+
+
+.phone__fon_video {
+    background-color: black;
+    border-radius: 20px;
+    width: 14.2rem;
+    height: 30rem;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ok {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #99dfab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:22rem;
+    right: 18rem;
+
+
+
+
+
 }
 
